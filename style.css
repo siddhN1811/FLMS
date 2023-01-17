@@ -1,35 +1,78 @@
 body {
-    background-color: #018B49;
-    /* height: 100vh; */
-  }
+  background-color: #018B49;
+  /* height: 100vh; */
+}
 
- .qwert{
-    height: 500vh;
+.qwert {
+  height: 500vh;
 
- }
-.footer{
+}
+
+.footer {
 
   position: fixed;
   bottom: 0;
   width: 100vw;
 }
-  .hero-text-container {
-    /* text-align: left;
-  lefpadding: 70px; */
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 13%;
-    left: 7%;
-    transform: translate(-10%, -50%);
-    transform: translate(-10%, 20%);
-  }
 
+.hero-text-container {
+  /* text-align: left;
+  lefpadding: 70px; */
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  transform: translate(-10%, -50%);
+  transform: translate(-10%, 20%);
+}
+
+.hero-text {
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  font-style: Roboto;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.right-image {
+  width: 596px;
+  height: 379px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  left: 140%;
+  transform: translate(-150%, -50%);
+  transform: translate(-160%, 20%);
+}
+
+
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.hero-text-container {
+  text-align: left;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
   .hero-text {
-    font-size: 3em;
-    font-weight: bold;
-    color: #fff;
-    font-style: Roboto;
+    font-size: 2em;
   }
 
   .font-roboto {
@@ -42,46 +85,5 @@ body {
     margin-right: 10px;
   }
 
-  .right-image {
-    width: 596px;
-    height: 379px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 10%;
-    left: 140%;
-    transform: translate(-150%, -50%);
-    transform: translate(-160%, 20%);
-  }
 
-
-
-  .responsive-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-  .hero-text-container {
-    text-align: left;
-    padding: 10px;
-  }
-
-
-  @media only screen and (max-width: 768px) {
-    .hero-text {
-      font-size: 2em;
-    }
-
-    .font-roboto {
-      font-family: 'Roboto', sans-serif;
-    }
-
-    .navbar-logo {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-
-
-  }
+}

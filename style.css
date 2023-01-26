@@ -1,3 +1,4 @@
+
 body {
   background-color: #018B49;
   /* height: 100vh; */
@@ -7,7 +8,13 @@ body {
   height: 500vh;
 
 }
+.accordion{
+  position: relative;
+  width: 40%;
+  padding-top: 4.5vw;
+  padding-left: 2vw;
 
+}
 .footer {
 
   position: fixed;
@@ -26,7 +33,17 @@ body {
   transform: translate(-10%, -50%);
   transform: translate(-10%, 20%);
 }
-
+.hero-text-container-con {
+  /* text-align: left;
+  lefpadding: 70px; */
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 3vw;
+  left: 7%;
+  transform: translate(-10%, -50%);
+  transform: translate(-10%, 20%);
+}
 .hero-text {
   font-size: 3em;
   font-weight: bold;

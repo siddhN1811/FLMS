@@ -8,6 +8,21 @@ body {
   height: 500vh;
 
 }
+.embed-responsive {
+  width: 70vh;
+  height:50vh;
+  top:10vh;
+  right: 30vh;
+  transform: scale(1) rotate(0deg); /* initial state */
+  transition: transform 0.7s ease; /* animate the transition */
+
+  
+  margin: 0 auto; /* center the map container horizontally */
+}
+.embed-responsive:hover{
+  transform: scale(1.05);
+
+}
 .accordion{
   position: relative;
   width: 40%;
@@ -49,8 +64,12 @@ body {
   font-weight: bold;
   color: #fff;
   font-style: Roboto;
+  transform: scale(1) rotate(0deg); /* initial state */
+  transition: transform 0.7s ease; /* animate the transition */
 }
 
+.hero-text:hover {
+  transform: scale(1.05);}
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }

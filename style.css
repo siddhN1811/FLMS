@@ -1,9 +1,41 @@
 
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
 body {
   background-color: #018B49;
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 6.74em;
   /* height: 100vh; */
+  box-sizing: inherit;
+}
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
+.right-image {
+  width: 596px;
+  height: 379px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  left: 140%;
+  transform: translate(-150%, -50%);
+  transform: translate(-160%, 20%);
+}
+
+
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
 .qwert {
   height: 500vh;
 
@@ -30,12 +62,7 @@ body {
   padding-left: 2vw;
 
 }
-.footer {
 
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-}
 
 .hero-text-container {
   /* text-align: left;
@@ -43,7 +70,7 @@ body {
   display: block;
   margin: 0 auto;
   position: absolute;
-  top: 13%;
+  top: 2.5%;
   left: 7%;
   transform: translate(-10%, -50%);
   transform: translate(-10%, 20%);
@@ -70,44 +97,32 @@ body {
 
 .hero-text:hover {
   transform: scale(1.05);}
+  
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }
-
-.navbar-logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.right-image {
-  width: 596px;
-  height: 379px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 10%;
-  left: 140%;
-  transform: translate(-150%, -50%);
-  transform: translate(-160%, 20%);
-}
-
-
-
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
 
 .hero-text-container {
   text-align: left;
   padding: 10px;
 }
+.hero-text-updates{
+  position: absolute;
+  top: 15vh;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  font-style: Roboto;
+  transform: scale(1) rotate(0deg); /* initial state */
+  transition: transform 0.7s ease; /* animate the transition */
 
+}
+.hero-text-updates:hover{
+  transform: scale(1.05);
+}
 
 @media only screen and (max-width: 768px) {
-  .hero-text {
+  .hero-text,.hero-text-updates {
     font-size: 2em;
   }
 
@@ -123,3 +138,145 @@ body {
 
 
 }
+
+.white-Section  {
+  background-color: white;
+  height: 60vh;
+  position:absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 78vh;
+}
+
+
+
+
+footer{
+ 
+ 
+
+  
+
+
+  width: 100%;
+  height: 100px
+  
+}
+
+.imageF{
+  position: absolute;
+  left: 6vh;
+  top: 5vh;
+  bottom: 5vh;
+  width: 60vh;
+  height: 50vh;
+  box-shadow: -10px 10px 5px #4e4d4d;
+  transform: scale(1) rotate(0deg); /* initial state */
+  transition: transform 0.7s ease; /* animate the transition */
+}
+.imageF:hover{
+
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.title1{
+
+  position: absolute;
+  left: 80vh;
+  right:20vh;
+  top: 6vh;
+ 
+}
+.title-text{
+
+  font-size:30px;
+  font-weight: bold;
+  transform: scale(1) rotate(0deg); /* initial state */
+  transition: transform 0.7s ease; /* animate the transition */
+  text-align: left;
+}
+.title-text:hover{
+  transform: scale(1.05);
+  text-decoration: underline;
+  
+  
+
+
+}
+
+.desc1{
+  position: absolute;
+  left: 80vh;
+  right:20vh;
+  top: 20vh;
+ 
+
+}
+
+@media only screen and (max-width: 768px) {
+  .title-text {
+    font-size: 1.5em;
+
+  }
+
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }}
+  
+
+  .white-Section2  {
+    background-color: #ffffff;
+    height: 60vh;
+    position:absolute;
+    right: 0 ;
+    width: 75%;
+    bottom: 312vh;
+     overflow:hidden;
+    border-radius: 235px 0px 0px 235px;
+/*
+
+    transition: width 1.2s ease-in-out; */
+  }
+  /* .white-Section2:hover{
+    width: 72% ;
+  } */
+  .floodImage{
+    box-shadow: 10px 10px 5px #4e4d4d;
+    position: absolute;
+    width: 60vh;
+    height: 50vh;
+    left:135vh;
+    top: 154vh;
+  }
+  .arrow{
+
+    position:absolute;
+    top: 23vh;
+    left: 3vh;
+    width: 10vh;
+    height: 12vh;
+  }
+ 
+  .title2{
+
+    font-size:30px;
+    font-weight: bold;
+    transform: scale(1) rotate(0deg); /* initial state */
+    transition: transform 0.7s ease; /* animate the transition */
+    text-align: left;
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+  }
+  .title2:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+  .desc-text2{
+    position: absolute;
+    top: 19vh;
+    left: 10vh;
+  }
+
+  

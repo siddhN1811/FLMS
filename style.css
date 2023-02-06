@@ -169,8 +169,8 @@ body {
 /* --------------flood image 1--------------- */
 .dbit1Img {
   height: 50vh;
-  width: 70vh;
-  min-width: 10vh;
+  width: 35vw;
+  min-width: 10vw;
   margin-top: 5vh;
   margin-left: 6vh;
 
@@ -182,6 +182,7 @@ body {
 
 
 }
+
 
 .dbit1Img:hover {
   transform: scale(1.08);

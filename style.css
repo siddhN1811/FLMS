@@ -189,7 +189,7 @@ body {
 }
 
 .col{
-  /* border:3px solid red */
+    /* border:3px solid red */
 }
 /* --------------flood image 1 description--------------- */
 .con1 {
@@ -322,20 +322,48 @@ body {
 
 
 
-/* updates.html */
+/* updates.html *************************************************************************************/
+
+#mapUpdate{
+  width: 30vw;
+  height: 50vh;
+  border-radius: 2vh;
+  margin-left: 3vw;
+  box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
+
+
+}
+
+.weather{
+
+  height: 50vh;
+  width: 50vw;
+  margin-left: 5vw;
+  border-radius: 2vh;
+  background-color:aliceblue;
+  border-style: 10px solid rgb(139, 138, 138);
+
+
+}
+
+
+.rowUW {
+  /* border: 3px solid red; 
+   height: 10vh; */
+  
+}
+.WT{
+  font-style: Roboto;
+  font-size: 1.5vw;
+  font-weight: 700;
+  font-style: Roboto;
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-/* contacts.html */
+/* contacts.html *************************************************************************************/
 .contactBody{
  
   height:100%;

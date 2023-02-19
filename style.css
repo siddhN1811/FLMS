@@ -329,12 +329,13 @@ body {
   height: 50vh;
   border-radius: 2vh;
   margin-left: 3vw;
+  margin-top: 3vh;
   box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
 
 
 }
 
-.weather{
+/* .weather{
 
   height: 50vh;
   width: 50vw;
@@ -344,13 +345,19 @@ body {
   border-style: 10px solid rgb(139, 138, 138);
 
 
-}
+} */
 
 
-.rowUW {
-  /* border: 3px solid red; 
-   height: 10vh; */
-  
+.rowbg {
+  /* border: 3px solid red;  */
+  width: 100%;
+   background-color:aliceblue;
+   min-width: 100%;
+   border-top-right-radius: 30vh;
+   border-bottom-right-radius: 30vh;
+
+   
+
 }
 .WT{
   font-style: Roboto;
@@ -359,6 +366,7 @@ body {
   font-style: Roboto;
   padding-left: 3vw;
   padding-top: 3vh;
+
 }
 
 

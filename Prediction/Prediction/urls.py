@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from CONTACTUS.views import add_user
+# from weather_app.views import weather
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('weather/', weather, name='weather'),
+    # path('add/', add_user, name='add_user'),
+    
 ]

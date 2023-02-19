@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Weather for {{ weather.city }}</h1>
+  {% if weather %}
+    <p>Temperature: {{ weather.temperature }}°C</p>
+    <p>Description: {{ weather.description }}</p>
+    <img src="https://openweathermap.org/img/wn/{{ weather.icon }}.png" alt="Weather icon">
+  {% else %}
+    <p>Please enter a city name to see the weather.</p>
+  {% endif %}
+  <form method="get">
+    <label for="city">Enter a city name:</label>
+    <input type="text" name="city" id="city" value="{{ request.GET.city }}">
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}

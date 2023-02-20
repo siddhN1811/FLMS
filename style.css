@@ -323,7 +323,9 @@ body {
 
 
 /* updates.html *************************************************************************************/
-
+.bodyUpdate{
+  height: 100vh;
+}
 #mapUpdate{
   width: 30vw;
   height: 50vh;
@@ -390,6 +392,7 @@ body {
   box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
   margin-left: 6.5vw;
 }
+<<<<<<< HEAD
 /* #phone{
 /* display: flex;
 justify-content: space-between;
@@ -447,3 +450,117 @@ align-items: center; */
  .contactHeader{
   margin-left: 80px;
  }
+=======
+
+/* prepare.html*********************************************************** */
+.rowP{
+  /* border:3px solid red; */
+
+}
+.rowP1{
+  
+  /* border:3px solid red; */
+  width: 100%;
+}
+.containerP{
+    padding: 0;
+    width: 100%;
+    height:100%;
+    padding-bottom: 0;
+
+
+}
+
+.heroImg-P{
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  filter:brightness(50%) blur(3.5px);
+  
+}
+.PHeroText{
+  font-style: Roboto;
+  font-weight: 900;
+  font-size: 4vw;
+  margin-top: 5vh;
+  margin-left: 30vw;
+  color: white;
+  transform: scale(1);
+  
+}
+.colP{
+  /* border:3px solid red; */
+
+}
+.rowP1{
+  height: 20vh;
+  position: absolute;
+  margin-top: -50vh;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+  
+}
+.dos{
+  font-style: Roboto;
+  font-size: 3vw;
+  padding-top: 1vh;
+  margin-top: 7vh;
+  margin-left: 3vw;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  
+}
+
+.rowP3{
+  background-color: white;
+  width: 50%;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  height: 10vh;
+  transform: scale(1);
+  
+  transition: all .8s ease-in-out;
+}
+.rowP3:hover{
+    transform: scale(1.1);
+
+}
+.rowP4{
+  background-color: aliceblue;
+  margin-top: 13vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.rowP5{
+ margin-bottom: 0;
+
+}
+.post-29340{
+  background-color: aliceblue;
+  margin-top: 8vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.textDos{
+  margin-left: 3vw;
+  font-style: Roboto;
+  
+}
+.helpDos{
+  margin-left: 3vw;
+  font-style: Roboto;
+
+}
+.footerPrepare{
+  margin-top:15.7vh;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  bottom: 0vh;
+  height: 20vh;
+  background-color: white;
+ 
+
+}
+>>>>>>> c1ec39f1d34a58ade3153a875cc4bfa59c90d508

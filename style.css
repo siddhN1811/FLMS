@@ -398,10 +398,15 @@ body {
 justify-content: space-between;
 align-items: center; */
 .bdr2{
-  margin-top: 5vh;
+  margin-top: 8vh;
   margin-right: 5vw;
   
 }
+.phoneimage{
+  margin-top: 5vh;
+  margin-right: 5vw;
+}
+
 .contactImg{
   width: 30vw;
   height: 40vh;
@@ -449,8 +454,10 @@ align-items: center; */
  }
  .contactHeader{
   margin-left: 80px;
+  
+  
  }
-=======
+/* ======= */
 
 /* prepare.html*********************************************************** */
 .rowP{

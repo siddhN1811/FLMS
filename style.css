@@ -379,5 +379,15 @@ body {
 .accordion{
   width: 40vw;
 }
+.bdr{
+  height: 6cm;
+  color: red;
+}
+.card{
+  background-color: white;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
+  margin-left: 6.5vw;
+}
 
- 

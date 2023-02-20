@@ -392,6 +392,65 @@ body {
   box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
   margin-left: 6.5vw;
 }
+<<<<<<< HEAD
+/* #phone{
+/* display: flex;
+justify-content: space-between;
+align-items: center; */
+.bdr2{
+  margin-top: 5vh;
+  margin-right: 5vw;
+  
+}
+.contactImg{
+  width: 30vw;
+  height: 40vh;
+  margin-bottom: 30px;
+  
+}
+.callImg{
+  margin-top: 30vh;
+}
+.card2{
+  background-color: white;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
+  
+  margin-left: 6.5vw;}
+ .email{
+  margin-top: 5vh;
+  margin-left: 5vw;
+ }
+ .post{
+  margin-top: 4.5vh;
+  margin-left: 5vw;
+ }
+ .call{
+  margin-top: 14vh;
+  margin-left: 3.5vw;
+  color: black;
+ }
+ .number{
+  margin-left: 3vw;
+  
+ }
+ .emailfont{
+  margin-top: 4vh;
+  margin-left: 2.5vw;
+ }
+ .gmailfont{
+  margin-left: 2.5vw;
+  margin-bottom: 100px;
+ }
+ .postfont{
+  margin-top: 2vh;
+  margin-left: 5.5vw;
+ }
+ .contactHeader{
+  margin-left: 80px;
+ }
+=======
 
 /* prepare.html*********************************************************** */
 .rowP{
@@ -504,3 +563,4 @@ body {
  
 
 }
+>>>>>>> c1ec39f1d34a58ade3153a875cc4bfa59c90d508

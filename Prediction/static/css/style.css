@@ -409,18 +409,31 @@ align-items: center; */
 
 .contactImg{
   width: 30vw;
-  height: 40vh;
-  margin-bottom: 30px;
+    margin-top: -18.1vh;
+    margin-right: -4vw;
+    height: 47vh;
+    border-bottom-left-radius: 30vh;
+    margin-bottom: 30px;
   
 }
 .callImg{
   margin-top: 30vh;
 }
+.card{
+  transform: scale(1);
+  transition: all .5s ease-in-out;
+  box-shadow: -1vh 1vh 1.5vh 0vh rgb(63, 63, 63);
+
+
+}
+.card:hover{
+  
+  transform: scale(1.2);
+}
 .card2{
   background-color: white;
   width: 20vw;
   height: 30vh;
-  box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
   
   margin-left: 6.5vw;}
  .email{

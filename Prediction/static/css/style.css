@@ -411,6 +411,7 @@ body {
   height: 30vh;
   box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
   margin-left: 6.5vw;
+  border-radius: 40px;
 }
 
 /* #phone{
@@ -426,7 +427,9 @@ align-items: center; */
   margin-top: 5vh;
   margin-right: 5vw;
 }
-
+.g-3{
+  width: 70vw;
+}
 .contactImg{
   width: 30vw;
     margin-top: -18.1vh;

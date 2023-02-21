@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
-  <script src = "script.js"></script>
+  <script src = "{% static 'js/script.js' %}"></script>
 
 
 </head>
@@ -62,7 +62,7 @@
               </li>
               <li class="nav-item">
                 
-                <a class="nav-link" href="prepare.html">Preparing for Floods</a>
+                <a class="nav-link" href="{% url 'Prepare' %}">Preparing for Floods</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'contactus' %}">Contact</a>
@@ -71,13 +71,41 @@
             </ul>
           </div>
       
-          <img src="logoPng.png" alt="logo" class="navbar-logo">  
+          <img src="{% static 'images/logoPng.png' %}" alt="logo" class="navbar-logo">  
     </nav></div>
     </div>
     
   </div>
-  <div class="container mt-5">  
-    <h1 style="color: aliceblue;" id="contact">Contact</h1>
+  
+  <div class="container-fluid image">
+    <div class ="row">
+    <h1 class="container contactHeader"id="contact" style="color: aliceblue; ">Contact Us</h1></div>
+    <div class="row">
+      
+    
+    <div class="card col">
+      <div class="rounded  float-end"><img src="{% static 'images/image.png' %}"class="rounded float-md-end bdr2"width=20%  alt="">
+       <p class="fw-bold call">Call Us Directly</p>
+       <p class="fw-bold number">+91 00000 00000</p>
+      </div>
+    </div>
+    <div class="card card2 col">
+      <img src="{% static 'images/email.png' %}"width=20% class="email"alt="">
+      <p class="fw-bold emailfont">Email queries at</p>
+      <p class="fw-bold gmailfont">abcd@gmail.com</p>
+    </div>
+    <div class="card card3 col">
+      <img src="{% static 'images/post.png' %}"width=30% class="post" alt="">
+      <p class="fw-bold postfont">Post</p>
+    </div>
+    <div class="col">
+      <img class ="contactImg" src="{% static 'images/girl.jpeg' %}"width=20% alt=""class="float-end" >
+      
+    </div>
+   </div>
+    
+  
+  <div class="container mt-7">  
     <form class="row g-3" method="POST" action="{% url 'contactus' %}">
       {% csrf_token %}
       <div class="col -md-6">
@@ -98,67 +126,14 @@
       </div>
       <div class="col-md-12">
         <label for="comments" class="form-label">Comments</label>
-        <textarea class="form-control" id="comments"  rows="4" name="comment" required></textarea>
-  <!-- <div class="container-fluid bdr">
-    <h1  class="container "style="color: aliceblue;" id="contact" >Contact</h1>
-    <img src="images/girl.jpeg " class="img-fluid float-end" width="25%"
-    height="30px" alt="">
-  </div> -->
-  <div class="container-fluid image">
-    <div class ="row">
-    <h1 class="container contactHeader"id="contact" style="color: aliceblue; ">Contact Us</h1></div>>
-    <div class="row">
+        <textarea class="form-control" id="comments"  rows="4" name="comment" required></textarea></div>
+        <div class="col-md-12">
+          <button type="submit" id = "submitBtn" class="btn btn-primary" onclick="myFunction() ">Submit</button>
+        </div>
+      </form>
+    
       
-    
-    <div class="card col">
-      <div class="rounded  float-end"><img src="images/image.png"class="rounded float-md-end bdr2"width=20%  alt="">
-       <p class="fw-bold call">Call Us Directly</p>
-       <p class="fw-bold number">+91 00000 00000</p>
-      </div>
-    </div>
-    <div class="card card2 col">
-      <img src="images/email.png"width=20% class="email"alt="">
-      <p class="fw-bold emailfont">Email queries at</p>
-      <p class="fw-bold gmailfont">abcd@gmail.com</p>
-    </div>
-    <div class="card card3 col">
-      <img src="images/post.png"width=30% class="post" alt="">
-      <p class="fw-bold postfont">Post</p>
-    </div>
-    <div class="col">
-      <img class ="contactImg" src="images/girl.jpeg"width=20% alt=""class="float-end" >
-      
-    </div>
-   </div>
-    
-  
-  <div class="container mt-7">  
-    
-    <form id="myForm" class="row g-3">
-      <div class="col -md-6">
-        <label for="firstname" class="form-label fw-bold">First Name</label>
-        <input type="text" class="form-control" id="firstname" required>
-      </div>
-      <div class="col-md-6">
-        <label for="lastname" class="form-label fw-bold">Last Name</label>
-        <input type="text" class="form-control" id="lastname" required>
-      </div>
-      <div class="col-md-8">
-        <label for="emialinfo" class="form-label fw-bold">E-mail</label>
-        <input type="email" class="form-control" id="emailinfo" required>
-      </div>
-      <div class="col-md-4">
-        <label for="phoneNo." class="form-label fw-bold">Phone Number</label>
-        <input type="text" class="form-control" id="phoneNo" required>
-      </div>
-      <div class="col-md-12">
-        <label for="comments" class="form-label fw-bold">Comments</label>
-        <textarea class="form-control" id="comments"  rows="4" required></textarea>
-      </div>
-      <div class="col-md-12">
-        <button type="submit" id = "submitBtn" class="btn btn-primary" onclick="myFunction() ">Submit</button>
-      </div>
-    </form>
+   
 
     
   </div>

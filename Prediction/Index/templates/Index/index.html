@@ -62,7 +62,7 @@
               </li>
               <li class="nav-item">
                 
-                <a class="nav-link" href="prepare.html">Preparing for Floods</a>
+                <a class="nav-link" href="{% url 'Prepare' %}">Preparing for Floods</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'contactus' %}">Contact</a>
@@ -72,7 +72,7 @@
             </ul>
           </div>
       
-          <img src="logoPng.png" alt="logo" class="navbar-logo">  
+          <img src="{% static 'images/logoPng.png' %}" alt="logo" class="navbar-logo">  
     </nav></div>
     </div>
   <!-- <div class ="row">
@@ -128,7 +128,7 @@
   <div class ="row row2">
     <div class="col-5 ">
       
-        <img class ="dbit1Img img-fluid" src="images\nearDBIT(1).jpg" alt="Responsive image" >
+        <img class ="dbit1Img img-fluid" src="{% static 'images\nearDBIT(1).jpg' %}" alt="Responsive image" >
     </div>
     <div class ="col col con1">
       <h2 class ="conh1 hover-underline-animation">2022 Flood Near DBIT</h2>
@@ -149,7 +149,7 @@
 
       </div>
         <div class="col colImg2">
-        <img class ="dbit1Img dbit1Img2 img-fluid" src="images\nearDBIT(2).jpg" alt="Responsive image" >
+        <img class ="dbit1Img dbit1Img2 img-fluid" src="{% static 'images\nearDBIT(2).jpg' %}" alt="Responsive image" >
         </div>
   </div>
   <div class="row"></div>

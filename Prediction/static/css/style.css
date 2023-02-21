@@ -352,9 +352,9 @@ body {
 
 .rowbg {
   /* border: 3px solid red;  */
-  width: 100%;
+  width: 70%;
    background-color:aliceblue;
-   min-width: 100%;
+   min-width: 50%;
    border-top-right-radius: 30vh;
    border-bottom-right-radius: 30vh;
 
@@ -362,17 +362,37 @@ body {
 
 }
 .WT{
+  margin-top: 7vh;
+}
+.WT0{
   font-style: Roboto;
-  font-size: 1.5vw;
-  font-weight: 700;
+  font-size: 4.5vw;
+  font-weight: 600;
   font-style: Roboto;
-  padding-left: 3vw;
-  padding-top: 3vh;
+  padding-left: 7vw;
+  padding-top: 3h;
 
 }
+.WT1{
+  font-style: Roboto;
+  font-size: 2.5vw;
+  font-weight: 300;
+  margin-left: 12vw;
+  margin-top: -5vh;
+}
+.WT2{
+  font-style: Roboto;
+  font-size: 1.5vw;
+  margin-top: -2vh;
 
-
-
+  margin-left: 10.5vw;
+}
+.WT3{
+  font-style: Roboto;
+  font-size: 1.5vw;
+  margin-left: 4.5vw;
+  margin-top: -1vh;
+}
 /* contacts.html *************************************************************************************/
 .contactBody{
  
@@ -398,8 +418,8 @@ body {
 justify-content: space-between;
 align-items: center; */
 .bdr2{
-  margin-top: 8vh;
-  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-right: 6vw;
   
 }
 .phoneimage{
@@ -438,11 +458,13 @@ align-items: center; */
   margin-left: 6.5vw;}
  .email{
   margin-top: 5vh;
-  margin-left: 5vw;
+  margin-left: 6vw;
  }
  .post{
-  margin-top: 4.5vh;
-  margin-left: 5vw;
+  margin-top: 5.5vh;
+  margin-left: 6vw;
+  height: 6vh;
+  width: 3vw;
  }
  .call{
   margin-top: 14vh;
@@ -454,11 +476,11 @@ align-items: center; */
   
  }
  .emailfont{
-  margin-top: 4vh;
-  margin-left: 2.5vw;
+  margin-top: 2vh;
+  margin-left: 3.5vw;
  }
  .gmailfont{
-  margin-left: 2.5vw;
+  margin-left: 3.2vw;
   margin-bottom: 100px;
  }
  .postfont{

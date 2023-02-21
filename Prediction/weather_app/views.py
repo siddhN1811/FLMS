@@ -13,8 +13,12 @@ def get_weather(city):
         'temperature': data['main']['temp'],
         'description': data['weather'][0]['description'],
         'icon': data['weather'][0]['icon'],
+        'humidity':data['main']['humidity'],
+        'pressure':data['main']['pressure'],
+
     }
     weather['temperature'] = ((weather['temperature'] -32)*5)/9
+    weather['temperature'] = str(float("{:.2f}".format(weather['temperature'])))+'°'+'C'
     return weather
 
 def weather(request):

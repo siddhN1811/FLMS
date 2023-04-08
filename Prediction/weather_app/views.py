@@ -6,6 +6,7 @@ import requests
 
 def get_weather(city):
     url = f"https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
+    url2 = "api.openweathermap.org/data/2.5/forecast?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
     response = requests.get(url)
     data = response.json()
     weather = {

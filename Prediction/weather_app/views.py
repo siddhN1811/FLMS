@@ -3,15 +3,12 @@ from django.shortcuts import render
 # Create your views here.
 
 import requests
-import model
 
 def get_weather(city):
-
     url = f"https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
+    url2 = "api.openweathermap.org/data/2.5/forecast?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
     response = requests.get(url)
     data = response.json()
-
-
     weather = {
         'city': city,
         'temperature': data['main']['temp'],
@@ -25,58 +22,17 @@ def get_weather(city):
     weather['temperature'] = str(float("{:.2f}".format(weather['temperature'])))+'°'+'C'
     return weather
 
-
-
 def weather(request):
     # city = request.GET.get('city')
     # if city:
-    weather = get_weather('Mumbai')
+    weather = get_weather('Kurla')
     # else:
         # weather = None
+    print(weather['city'])
     context = {
         'weather': weather,
     }
     return render(request, 'weather_app\\updates.html', context)
 
-def forecast():
-        
-        
-# Getting next day's forecast data ------------
 
-    url2 = "https://api.openweathermap.org/data/2.5/forecast?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
-    response2 = requests.get(url2)
-    dataTomorrow = response2.json()
 
-    # predict_value = {
-    #     'temperature': data['main']['temp'],
-    #     'minTemperature': data['main']['temp_min'],
-    #     'maxTemperature': data['main']['temp_max'],
-    #     'feelsLike': data['main']['feels_like'],
-    #     'humidity':data['main']['humidity'],
-    #     'wind':data['wind']['deg']
-
-    # }
-
-#forecast data-----------------
-    predict_tomorrow = {
-
-        'temp_max':round(((dataTomorrow['list'][1]['main']['temp_max'] -32)*5)/9,2),
-        'temp_min':round(((dataTomorrow['list'][1]['main']['temp_min'] -32)*5)/9,2),
-        'temp':round(((dataTomorrow['list'][1]['main']['temp'] -32)*5)/9,2),
-        'feels_like':round(((dataTomorrow['list'][1]['main']['feels_like'] -32)*5)/9,2),
-        'humidity':dataTomorrow['list'][1]['main']['humidity'],
-        'wind':dataTomorrow['list'][1]['wind']['deg']
-    }
-    
-# #forcast values to pass to model.predict---------
-
-    val = [list(predict_tomorrow.values())]
-
-    return val
-
-    
-a = forecast()
-
-# Prediction--------------
-prediction  = model.predict(a)
-print(prediction)

@@ -1,12 +1,12 @@
 html {
-  min-height: 100%;
-  box-sizing: border-box;
+
   padding: 0px;
   margin: 0;
   width: 100%;
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+ 
 }
 
 body {
@@ -14,15 +14,13 @@ body {
   background-color: #018B49;
   min-width: 100%;
   margin: 0;
-  position: relative;
   min-height: 100vh;
-  height: 400vh;
+  height: 100vh;
   box-sizing: inherit;
   overflow-x: hidden;
   width: 100%;
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden;
 
 }
 
@@ -188,9 +186,9 @@ body {
   transform: scale(1.08);
 }
 
-.col{
+/* .col{
     /* border:3px solid red */
-}
+/* }  */
 /* --------------flood image 1 description--------------- */
 .con1 {
   margin-left: 10vh;
@@ -288,18 +286,15 @@ body {
   
 }
 .footer{
-  margin-top: 131.9vh;
+  margin-top: 15.9vh;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  bottom: 0vh;
-  min-height: 10vh;
   background-color: white;
   overflow-x: hidden;
   width: 100%;
-  padding: 0px;
+
   height: 20vh;
-  overflow: hidden;
 
 }
 
@@ -374,11 +369,10 @@ body {
 
 }
 .WT1{
-  font-style: Roboto;
   font-size: 2.5vw;
-  font-weight: 300;
-  margin-left: 12vw;
-  margin-top: -5vh;
+  font-weight: 400;
+  margin-left: 11vw;
+  margin-top: -4vh;
 }
 .WT2{
   font-style: Roboto;
@@ -390,9 +384,171 @@ body {
 .WT3{
   font-style: Roboto;
   font-size: 1.5vw;
-  margin-left: 4.5vw;
+  margin-left: 4.4vw;
   margin-top: -1vh;
 }
+.footerUpdate{
+  margin-bottom: 0vh;
+  background-color: white;
+ 
+  width: 100vw;
+
+  height: 20vh;
+
+}
+
+
+
+
+
+/* prepare.html*********************************************************** */
+/* .rowP{
+  /* border:3px solid red; 
+
+} */
+.rowP1{
+  
+  /* border:3px solid red; */
+  width: 100%;
+}
+.containerP{
+    padding: 0;
+    width: 100%;
+    height:100%;
+    padding-bottom: 0;
+
+
+}
+
+.heroImg-P{
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  filter:brightness(50%) blur(3.5px);
+  
+}
+.PHeroText{
+  font-style: Roboto;
+  font-weight: 900;
+  font-size: 4vw;
+  margin-top: 5vh;
+  margin-left: 30vw;
+  color: white;
+  transform: scale(1);
+  
+}
+/* .colP{
+  border:3px solid red; 
+
+} */
+.rowP1{
+  height: 20vh;
+  position: relative;
+  margin-top: -50vh;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+  
+}
+.rowPd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dos{
+  font-style: Roboto;
+  font-size: 3vw;
+  padding-top: 1vh;
+  margin-top: 35vh;
+  margin-left: 3vw;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  
+}
+.page{
+
+  width: 100%;
+
+}
+/* .col{
+  border: 3px solid red; 
+} */
+.rowP3{
+  background-color: white;
+  width: 50%;
+  border-top-right-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  height: 10vh;
+  transform: scale(1);
+  
+  transition: all .8s ease-in-out;
+}
+.rowP3:hover{
+    transform: scale(1.1);
+
+}
+.rowP4{
+  background-color: aliceblue;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.rowP5{
+ margin-bottom: 0;
+
+}
+.post-29340{
+  background-color: aliceblue;
+  margin-top: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.textDos{
+  margin-top: 4vh;
+  margin-left: 2vw;
+  font-style: Roboto;
+  
+  
+}
+.colTextDos{
+  margin-top: 4vh;
+  background-color: aliceblue;
+ 
+
+}
+
+.colImgDos{
+  margin-top: 4vh;
+  background-color: aliceblue;
+}
+.rowPd{
+  
+  margin-left: 0.5vw;
+
+}
+.helpDos{
+  margin-left: 3vw;
+  font-style: Roboto;
+
+}
+.footerPrepare{
+  margin-top: 25.6vh;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  bottom: 0vh;
+  height: 20vh;
+  background-color: white;
+ 
+
+}
+
+
+
+
+
+
 /* contacts.html *************************************************************************************/
 .contactBody{
  
@@ -495,117 +651,14 @@ align-items: center; */
   
   
  }
+ .footerContact{
+  margin-top: 15.6vh;
+  padding: 0;
+  margin-left: -1vw;
+   bottom: 0vh;
+  height: 20vh;
+  width: 100vw;
+  background-color: white;
+
+ }
 /* ======= */
-
-/* prepare.html*********************************************************** */
-.rowP{
-  /* border:3px solid red; */
-
-}
-.rowP1{
-  
-  /* border:3px solid red; */
-  width: 100%;
-}
-.containerP{
-    padding: 0;
-    width: 100%;
-    height:100%;
-    padding-bottom: 0;
-
-
-}
-
-.heroImg-P{
-  margin-top: 0;
-  width: 100%;
-  height: auto;
-  filter:brightness(50%) blur(3.5px);
-  
-}
-.PHeroText{
-  font-style: Roboto;
-  font-weight: 900;
-  font-size: 4vw;
-  margin-top: 5vh;
-  margin-left: 30vw;
-  color: white;
-  transform: scale(1);
-  
-}
-.colP{
-  /* border:3px solid red; */
-
-}
-.rowP1{
-  height: 20vh;
-  position: absolute;
-  margin-top: -50vh;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-
-  
-}
-.dos{
-  font-style: Roboto;
-  font-size: 3vw;
-  padding-top: 1vh;
-  margin-top: 7vh;
-  margin-left: 3vw;
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  
-}
-
-.rowP3{
-  background-color: white;
-  width: 50%;
-  border-top-right-radius: 5vw;
-  border-bottom-right-radius: 5vw;
-  height: 10vh;
-  transform: scale(1);
-  
-  transition: all .8s ease-in-out;
-}
-.rowP3:hover{
-    transform: scale(1.1);
-
-}
-.rowP4{
-  background-color: aliceblue;
-  margin-top: 10vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-.rowP5{
- margin-bottom: 0;
-
-}
-.post-29340{
-  background-color: aliceblue;
-  margin-top: 1vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-.textDos{
-  margin-left: 3vw;
-  font-style: Roboto;
-  
-}
-.helpDos{
-  margin-left: 3vw;
-  font-style: Roboto;
-
-}
-.footerPrepare{
-  margin-top: 9vh;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  bottom: 0vh;
-  height: 20vh;
-  background-color: white;
- 
-
-}
-

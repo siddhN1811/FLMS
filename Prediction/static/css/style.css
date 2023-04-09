@@ -286,7 +286,7 @@ body {
   
 }
 .footer{
-  margin-top: 15.9vh;
+  margin-top: 15vh;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -452,9 +452,6 @@ body {
 }
 .rowPd {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 .dos{
   font-style: Roboto;
@@ -466,6 +463,30 @@ body {
   font-weight: 700;
   
 }
+
+.Pimg{
+
+
+    height: 40vh;
+    width: 25vw;
+    min-width: 10vw;
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+    margin-left: 15vw;
+    min-height: 10vh;
+    border-radius: 2vh;
+    box-shadow: -1vh 1vh .5vh 0vh rgb(63, 63, 63);
+    transform: scale(1);
+    transition: all .8s ease-in-out;
+  
+
+}
+
+
+.Pimg:hover {
+  transform: scale(1.08);
+}
+
 .page{
 
   width: 100%;
@@ -530,6 +551,12 @@ body {
 .helpDos{
   margin-left: 3vw;
   font-style: Roboto;
+
+}
+.boldHelp{
+  font-style: Roboto;
+  font-size: 2.5vw;
+  font-weight: 700;
 
 }
 .footerPrepare{

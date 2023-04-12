@@ -397,8 +397,93 @@ body {
 
 }
 
+.marquee {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 
+/* Style the text inside the container */
+/* .marquee-text {
+  display: inline-block;
+  padding-right: 100%;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  animation: marquee 15s linear infinite;
+} */
+.marquee {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color:aliceblue;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  
+  margin-bottom: 10px;
+}
 
+/* Style the text inside the container */
+.marquee-text {
+  display: inline-block;
+  padding-right: 100%;
+  font-size: 18px;
+  margin-top: 1vh;
+  color: #333;
+  font-weight: bold;
+  animation: marquee 15s linear infinite;
+}
+
+/* Style for moderate rainfall */
+.marquee-text2 {
+  margin-top: 10vh;
+  font-size: 18px;
+
+  font-weight: bold;
+
+}
+
+/* Style for heavy rainfall and floods */
+.marquee-text3, .marquee-text4 {
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+
+  border-radius: 5px;
+}
+.gif{
+  width: 3vw;
+  height: 4vh;
+}
+.gif2{
+  width: 3vw;
+  height: 5vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+
+}
+.gif4{
+  width: 3vw;
+  height: 5vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+margin-top: -3vh;
+}
+/* Define the animation */
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 
 
 /* prepare.html*********************************************************** */
@@ -689,3 +774,4 @@ align-items: center; */
 
  }
 /* ======= */
+

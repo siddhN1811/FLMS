@@ -1,42 +1,10 @@
 from django.shortcuts import render
-
+from django.core.mail import send_mail
+from Prediction import settings
 # Create your views here.
 
 import requests
 import model
-
-def get_weather(city):
-
-    url = f"https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
-    response = requests.get(url)
-    data = response.json()
-
-
-    weather = {
-        'city': city,
-        'temperature': data['main']['temp'],
-        'description': data['weather'][0]['description'],
-        'icon': data['weather'][0]['icon'],
-        'humidity':data['main']['humidity'],
-        'pressure':data['main']['pressure'],
-
-    }
-    weather['temperature'] = ((weather['temperature'] -32)*5)/9
-    weather['temperature'] = str(float("{:.2f}".format(weather['temperature'])))+'°'+'C'
-    return weather
-
-
-
-def weather(request):
-    # city = request.GET.get('city')
-    # if city:
-    weather = get_weather('Mumbai')
-    # else:
-        # weather = None
-    context = {
-        'weather': weather,
-    }
-    return render(request, 'weather_app\\updates.html', context)
 
 def forecast():
         
@@ -75,8 +43,67 @@ def forecast():
     return val
 
     
+# a = forecast()
+
+# # Prediction--------------
+# prediction  = model.predict(a)
+# return prediction
+
+def get_weather(city):
+
+    url = f"https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=imperial&appid=086b10858db32a1f21b26efeef0ae98b"
+    response = requests.get(url)
+    data = response.json()
+
+
+    weather = {
+        'city': city,
+        'temperature': data['main']['temp'],
+        'description': data['weather'][0]['description'],
+        'icon': data['weather'][0]['icon'],
+        'humidity':data['main']['humidity'],
+        'pressure':data['main']['pressure'],
+
+    }
+    weather['temperature'] = ((weather['temperature'] -32)*5)/9
+    weather['temperature'] = str(float("{:.2f}".format(weather['temperature'])))+'°'+'C'
+    return weather
+
+
+
+def weather(request):
+    # city = request.GET.get('city')
+    # if city:
+    weather = get_weather('Mumbai')
+    # else:
+        # weather = None
+    a = forecast()
+    # Prediction--------------
+    prediction  = model.predict(a)
+    # print(prediction)
+    # prediction=100
+    # if prediction>90:
+    #     send_mail(
+    #     'Flood Warning!!',
+    #     'There is a high chance of flood occuring tomorow, so follow the guidlines on the preparing for floods page',
+    #     settings.EMAIL_HOST_USER,
+    #     ['kalpita@dbit.in'],
+    #     fail_silently=False,
+    #     )
+    #     print("Sent successfully")
+    context = {
+        'weather': weather,
+        'prediction': prediction
+    }
+    return render(request, 'weather_app\\updates.html', context)
+
+
+
 a = forecast()
 
-# Prediction--------------
 prediction  = model.predict(a)
 print(prediction)
+
+
+
+

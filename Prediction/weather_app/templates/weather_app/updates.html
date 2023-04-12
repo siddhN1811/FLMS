@@ -79,6 +79,23 @@
     </nav></div>
     </div>
   
+  {% if prediction %}
+    <marquee behavior="" direction="left" class="marquee">
+      {% if prediction <= 0 %}
+      <span class="marquee-text5"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and severe floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
+      {% elif prediction > 0 and prediction < 50 %}
+      <span class="marquee-text2"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of moderate rainfall<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2 "></span>
+      {% elif prediction > 50 and prediction < 90 %}
+      <span class="marquee-text3"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of heavy rainfall<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2"></span>
+      {% elif prediction > 90 and prediction < 110 %}
+      <span class="marquee-text4"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
+      {% else %}
+      <span class="marquee-text5"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and severe floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
+      {%endif %}
+      
+    </marquee>
+  {% endif %}
+    
   <!--------------HERO TEXT AND MAP------------>
 
     <div class="row row1Update">

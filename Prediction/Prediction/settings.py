@@ -132,10 +132,12 @@ STATICFILES_DIRS = BASE_DIR, 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS= True
-EMAIL_HOST = "shiabpatel123@gmail.com"
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('Weather_EMAIL')
-EMAIL_HOST_PASSWORD = os.environ.get('hxngqhzpcebbgajq')
-DEFAULT_FROM_EMAIL = 'shiabpatel123@gmail.com'
+EMAIL_HOST_USER = 'flmsbroadcast@gmail.com'
+EMAIL_HOST_PASSWORD = 'cetqyhcymqtycqjr'
+# EMAIL_HOST_USER = os.environ.get('Weather_EMAIL')
+# EMAIL_HOST_PASSWORD = os.environ.get('hxngqhzpcebbgajq')
+DEFAULT_FROM_EMAIL = 'default from email'

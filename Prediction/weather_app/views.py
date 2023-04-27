@@ -81,15 +81,15 @@ def weather(request):
     # Prediction--------------
     prediction  = model.predict(a)
     # print(prediction)
-    # prediction=100
-    # if prediction>90:
-    #     send_mail(
-    #     'Flood Warning!!',
-    #     'There is a high chance of flood occuring tomorow, so follow the guidlines on the preparing for floods page',
-    #     settings.EMAIL_HOST_USER,
-    #     ['kalpita@dbit.in'],
-    #     fail_silently=False,
-    #     )
+    prediction=100
+    if prediction>90:
+        send_mail(
+        'Flood Warning!!',
+        'There is a high chance of flood occuring tomorow, so follow the guidlines on the preparing for floods page',
+        settings.EMAIL_HOST_USER,
+        ['kalpita@dbit.in'],
+        fail_silently=False,
+        )
     #     print("Sent successfully")
     context = {
         'weather': weather,

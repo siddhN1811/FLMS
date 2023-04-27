@@ -80,17 +80,19 @@
     </div>
   
   {% if prediction %}
-    <marquee behavior="" direction="left" class="marquee">
-      {% if prediction <= 0 %}
-      <span class="marquee-text5"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and severe floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
-      {% elif prediction > 0 and prediction < 50 %}
-      <span class="marquee-text2"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of moderate rainfall<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2 "></span>
+    <marquee class="marquee" behavior="" direction="left" >
+      {% if prediction < 10 %}
+      <span class="marquee-text1"><img src="{% static 'images/sunny.gif' %}" alt="logo" class="gif">There won't be any rainfall Tomorrow<img src="{% static 'images/sunny.gif' %}" alt="logo" class="gif"></span>
+      {% elif prediction > 10 and prediction < 40 %}
+      <span class="marquee-text2"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of low rainfall Tomorrow<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2 "></span>
+      {% elif prediction > 40 and prediction < 50 %}
+      <span class="marquee-text2"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of moderate rainfall Tomorrow<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2 "></span>
       {% elif prediction > 50 and prediction < 90 %}
-      <span class="marquee-text3"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of heavy rainfall<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2"></span>
+      <span class="marquee-text3"><img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2">Chances of heavy rainfall Tomorrow<img src="{% static 'images/sadness.gif' %}" alt="logo" class="gif2"></span>
       {% elif prediction > 90 and prediction < 110 %}
-      <span class="marquee-text4"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
+      <span class="marquee-text4"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and moderate floods Tomorrow. Refer the Preparing for flood page.<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
       {% else %}
-      <span class="marquee-text5"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and severe floods<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
+      <span class="marquee-text5"><img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4">Possibility of Heavy rainfall and severe floods Tomorrow. Refer the Preparing for flood page.<img src="{% static 'images/alert.gif' %}" alt="logo" class="gif4"></span>
       {%endif %}
       
     </marquee>
